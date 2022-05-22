@@ -1,16 +1,21 @@
 // Add your code here
-rocker.onRightPressed(function () {
+basic.showIcon(IconNames.Yes)
+SimpleRocker.setup(AnalogPin.P0, AnalogPin.P1, TouchPin.P2)
+
+SimpleRocker.onRightPressed(function () {
     basic.showArrow(ArrowNames.East)
 })
-rocker.onButtonPressed(function () {
+SimpleRocker.onButtonPressed(function () {
     basic.showIcon(IconNames.Heart)
 })
-rocker.onUpPressed(function () {
+SimpleRocker.onUpPressed(function () {
     basic.showArrow(ArrowNames.North)
 })
-rocker.onLeftPressed(function () {
+SimpleRocker.onLeftPressed(function () {
     basic.showArrow(ArrowNames.West)
 })
-rocker.onDownPressed(function () {
+SimpleRocker.onDownPressed(function () {
     basic.showArrow(ArrowNames.South)
 })
+
+

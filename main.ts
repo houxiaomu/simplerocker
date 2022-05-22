@@ -1,4 +1,4 @@
-namespace rocker {
+namespace SimpleRocker {
     let px = AnalogPin.P0
     let py = AnalogPin.P1
     let ps = TouchPin.P2
